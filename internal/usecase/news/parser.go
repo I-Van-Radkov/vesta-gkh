@@ -34,7 +34,7 @@ func NewNewsParser(repo NewsAdapterProvider, cfg ParserConfig) *NewsParser {
 	}
 }
 
-func (p *NewsParser) Start(ctx context.Context) {
+func (p *NewsParser) Start(ctx context.Context) { // рофыврофыв
 	ticker := time.NewTicker(p.cfg.Interval)
 	defer ticker.Stop()
 
